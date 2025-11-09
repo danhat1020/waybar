@@ -1,0 +1,91 @@
+{
+  "layer": "top",
+
+  "margin-top": 0,
+  "width": 1920,
+
+  "modules-left": [
+    "clock",
+    "power-profiles-daemon",
+    "hyprland/window",
+  ],
+  "modules-center": [
+    "hyprland/workspaces",
+  ],
+  "modules-right": [
+    "backlight",
+    "pulseaudio",
+    "network",
+    "battery"
+  ],
+
+  // MODULES
+  // LEFT
+  "clock": {
+    "interval": 10,
+    "format": "{:%H:%M}",
+    "timezone": "Etc/GMT",
+    "tooltip": true,
+    "tooltip-format": "{:%d-%m-%Y}",
+  },
+
+  "power-profiles-daemon": {
+    "format": "󰠠",
+    "tooltip": true,
+    "tooltip-format": "Profile: {profile}",
+  },
+
+  "hyprland/window": {
+    "format": "{class}",
+    "icon": true,
+    "icon-size": 16,
+    "tooltip": false,
+    "rewrite": {
+      "com.mitchellh.ghostty": "ghostty",
+    },
+  },
+
+  // MIDDLE
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "persistent-workspaces": {
+      "*": 5,
+    },
+  },
+
+  // RIGHT
+  // backlight, pulseaudio, network, battery
+  "backlight": {
+    "interval": 10,
+    "format": "{icon}   {percent}%",
+    "format-icons": ["󰃞", "󰃞", "󰃞", "󰃟", "󰃟", "󰃟", "󰃟", "󰃠", "󰃠", "󰃠", "󰃠"],
+    "tooltip": false,
+    "reverse-scrolling": true,
+  },
+
+  "pulseaudio": {
+    "format": "󰕾   {volume}%",
+    "format-muted": "󰖁   MUTED",
+    "tooltip": false,
+    "reverse-scrolling": true,
+  },
+
+  "network": {
+    "format": "󰖩",
+    "format-disconnected": "󰖪",
+    "tooltip": true,
+    "tooltip-format": "{essid}: {signalStrength}%",
+  },
+
+  "battery": {
+    "bat": "BAT0",
+    "interval": 10,
+    "format": "{icon}    {capacity}%",
+    "format-icons": ["", "", "", "", ""],
+    "tooltip": false,
+    "states": {
+      "warning": 50,
+      "critical": 25,
+    },
+  },
+}
