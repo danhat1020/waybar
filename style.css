@@ -21,7 +21,7 @@ tooltip label {
 }
 
 window#waybar {
-    background: rgba(8, 8, 8, 1);
+    background: #080808;
 }
 
 .modules-left {
@@ -37,27 +37,8 @@ window#waybar {
     font-weight: 700;
 }
 
-#power-profiles-daemon {
-    font-size: 16px;
-    font-weight: 500;
-    padding: 0 26px 0 16px;
-    margin: 0;
-}
-
-#power-profiles-daemon.balanced {
-    color: rgba(120, 160, 200, 1);
-}
-
-#power-profiles-daemon.performance {
-    color: rgba(120, 200, 120, 1);
-}
-
-#power-profiles-daemon.power-saver {
-    color: rgba(200, 160, 120, 1);
-}
-
 #window {
-    color: rgba(220, 220, 220, 0.9);
+    color: rgba(220, 220, 220, 0.8);
     padding: 0 10px;
     margin-right: 10px;
     margin-bottom: 0px;
@@ -71,11 +52,12 @@ window#waybar {
 }
 
 #workspaces button {
+    border-radius: 2px;
     min-height: 0;
     background: none;
     color: rgba(255, 255, 255, 0.3);
-    padding: 0 12px;
-    margin: 0;
+    padding: 0 8px;
+    margin: 0 4px;
     box-shadow: inset 0 0 7px -1px rgba(255, 255, 255, 0);
 }
 
@@ -85,6 +67,8 @@ window#waybar {
 }
 
 #workspaces button.active {
+    padding: 0 8px;
+    margin: 0 4px;
     background: rgba(224, 224, 224, 0.05);
     color: rgba(240, 240, 240, 1);
     box-shadow: inset 0 0 1px 1px rgba(224, 224, 224, 0.3), inset 0 0 7px -1px rgba(255, 255, 255, 0.1);
@@ -101,18 +85,18 @@ window#waybar {
 }
 
 .modules-right .module {
-    margin: 0px 8px;
+    margin: 0 6px;
     font-size: 18px;
     font-weight: 500;
 }
 
 #backlight {
-    padding-right: 14px;
+    padding-right: 16px;
     color: rgba(200, 200, 200, 1);
 }
 
 #pulseaudio {
-    padding-right: 16px;
+    padding-right: 12px;
     color: rgba(200, 200, 200, 1);
 }
 
@@ -121,7 +105,7 @@ window#waybar {
 }
 
 #network {
-    padding-right: 20px;
+    padding-right: 24px;
     color: rgba(200, 200, 200, 1);
 }
 

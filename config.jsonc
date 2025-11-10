@@ -6,7 +6,6 @@
 
   "modules-left": [
     "clock",
-    "power-profiles-daemon",
     "hyprland/window",
   ],
   "modules-center": [
@@ -29,12 +28,6 @@
     "tooltip-format": "{:%d-%m-%Y}",
   },
 
-  "power-profiles-daemon": {
-    "format": "󰠠",
-    "tooltip": true,
-    "tooltip-format": "Profile: {profile}",
-  },
-
   "hyprland/window": {
     "format": "{class}",
     "icon": true,
@@ -49,7 +42,7 @@
   "hyprland/workspaces": {
     "format": "{name}",
     "persistent-workspaces": {
-      "*": 10,
+      "*": 8,
     },
   },
 
