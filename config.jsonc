@@ -41,7 +41,7 @@
     "icon-size": 16,
     "tooltip": false,
     "rewrite": {
-      "com.mitchellh.ghostty": "ghostty",
+      "org.wezfurlong.wezterm": "wezterm",
     },
   },
 
