@@ -1,7 +1,7 @@
 {
   "layer": "top",
 
-  "margin-top": 0,
+  "margin-top": 7,
   "width": 1920,
 
   "modules-left": [
@@ -50,15 +50,15 @@
   // backlight, pulseaudio, network, battery
   "backlight": {
     "interval": 10,
-    "format": "{icon} {percent}%",
+    "format": "{icon}  {percent}%",
     "format-icons": ["󰃞", "󰃞", "󰃞", "󰃟", "󰃟", "󰃟", "󰃟", "󰃠", "󰃠", "󰃠", "󰃠"],
     "tooltip": false,
     "reverse-scrolling": true,
   },
 
   "pulseaudio": {
-    "format": "󰕾 {volume}%",
-    "format-muted": "󰖁 MUTED",
+    "format": "󰕾  {volume}%",
+    "format-muted": "󰖁  MUTED",
     "tooltip": false,
     "reverse-scrolling": true,
   },
@@ -73,7 +73,7 @@
   "battery": {
     "bat": "BAT0",
     "interval": 10,
-    "format": "{icon}  {capacity}%",
+    "format": "{icon}   {capacity}%",
     "format-icons": ["", "", "", "", ""],
     "tooltip": false,
     "states": {
