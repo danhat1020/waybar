@@ -85,7 +85,7 @@ window#waybar {
     border-left: 1px solid rgba(128, 128, 128, 0.7);
     padding: 0 12px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 #backlight {
@@ -98,7 +98,7 @@ window#waybar {
 }
 
 #pulseaudio.muted {
-    color: rgba(200, 200, 200, 0.5);
+    color: rgba(200, 200, 200, 0.4);
 }
 
 #network {
@@ -107,7 +107,7 @@ window#waybar {
 }
 
 #network.disconnected {
-    color: rgba(200, 120, 120, 1);
+    color: rgba(255, 100, 100, 1);
 }
 
 #battery {
@@ -116,9 +116,9 @@ window#waybar {
 }
 
 #battery.warning {
-    color: rgba(200, 160, 120, 1);
+    color: rgba(255, 150, 100, 1);
 }
 
 #battery.critical {
-    color: rgba(200, 120, 120, 1);
+    color: rgba(255, 100, 100, 1);
 }
