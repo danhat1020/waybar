@@ -1,84 +1,84 @@
 {
-  "layer": "top",
+    "layer": "top",
 
-  "margin-top": 7,
-  "width": 1920,
+    "margin-top": 0,
+    "width": 1920,
 
-  "modules-left": [
-    "clock",
-    "hyprland/window",
-  ],
-  "modules-center": [
-    "hyprland/workspaces",
-  ],
-  "modules-right": [
-    "backlight",
-    "pulseaudio",
-    "network",
-    "battery"
-  ],
+    "modules-left": [
+        "hyprland/workspaces",
+        "hyprland/window",
+    ],
+    "modules-center": [
+        "clock",
+    ],
+    "modules-right": [
+        "backlight",
+        "pulseaudio",
+        "network",
+        "battery"
+    ],
 
   // MODULES
   // LEFT
-  "clock": {
-    "interval": 10,
-    "format": "{:%H:%M}",
-    "timezone": "Etc/GMT",
-    "tooltip": true,
-    "tooltip-format": "{:%d-%m-%Y}",
+  "hyprland/workspaces": {
+      "format": "{name}",
+      "persistent-workspaces": {
+          "*": 10,
+      },
   },
 
   "hyprland/window": {
-    "format": "{class}",
-    "icon": true,
-    "icon-size": 16,
-    "tooltip": false,
-    "rewrite": {
-      "org.wezfurlong.wezterm": "WezTerm",
-    },
+      "format": "{class}",
+      "icon": true,
+      "icon-size": 12,
+      "tooltip": false,
+      "rewrite": {
+          "org.wezfurlong.wezterm": "WezTerm",
+      },
   },
 
   // MIDDLE
-  "hyprland/workspaces": {
-    "format": "{name}",
-    "persistent-workspaces": {
-      "*": 9,
-    },
+  "clock": {
+      "interval": 10,
+      "format": "{:%H:%M}",
+      "timezone": "Etc/GMT",
+      "tooltip": true,
+      "tooltip-format": "{:%d-%m-%Y}",
   },
 
   // RIGHT
   // backlight, pulseaudio, network, battery
   "backlight": {
-    "interval": 10,
-    "format": "{icon}  {percent}%",
-    "format-icons": ["󰃞", "󰃞", "󰃞", "󰃟", "󰃟", "󰃟", "󰃟", "󰃠", "󰃠", "󰃠", "󰃠"],
-    "tooltip": false,
-    "reverse-scrolling": true,
+      "interval": 10,
+      "format": "{icon} {percent}%",
+      "format-icons": ["󰃞", "󰃞", "󰃞", "󰃟", "󰃟", "󰃟", "󰃟", "󰃠", "󰃠", "󰃠", "󰃠"],
+      "tooltip": false,
+      "reverse-scrolling": true,
   },
 
   "pulseaudio": {
-    "format": "󰕾  {volume}%",
-    "format-muted": "󰖁  MUTED",
-    "tooltip": false,
-    "reverse-scrolling": true,
+      "format": "󰕾 {volume}%",
+      "format-muted": "󰖁 MUTED",
+      "tooltip": false,
+      "reverse-scrolling": true,
   },
 
   "network": {
-    "format": "󰖩",
-    "format-disconnected": "󰖪",
-    "tooltip": true,
-    "tooltip-format": "{essid}: {signalStrength}%",
+      "format": "󰖩",
+      "format-disconnected": "󰖪",
+      "tooltip": true,
+      "tooltip-format": "{essid}: {signalStrength}%",
   },
 
   "battery": {
-    "bat": "BAT0",
-    "interval": 10,
-    "format": "{icon}   {capacity}%",
-    "format-icons": ["", "", "", "", ""],
-    "tooltip": false,
-    "states": {
-      "warning": 50,
-      "critical": 25,
-    },
+      "bat": "BAT0",
+      "interval": 10,
+      "format": "{icon} {capacity}%",
+      "format-icons": ["", "", "", "", ""],
+      "tooltip": false,
+      "states": {
+          "warning": 50,
+          "critical": 25,
+      },
   },
 }
