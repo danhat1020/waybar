@@ -6,10 +6,10 @@
 
     "modules-left": [
         "hyprland/workspaces",
-        "hyprland/window",
     ],
     "modules-center": [
         "clock",
+        "hyprland/window",
     ],
     "modules-right": [
         "backlight",
@@ -27,6 +27,15 @@
       },
   },
 
+  // MIDDLE
+  "clock": {
+      "interval": 10,
+      "format": "{:%H:%M}",
+      "timezone": "Etc/GMT",
+      "tooltip": true,
+      "tooltip-format": "{:%d-%m-%Y}",
+  },
+
   "hyprland/window": {
       "format": "{class}",
       "icon": true,
@@ -35,15 +44,6 @@
       "rewrite": {
           "org.wezfurlong.wezterm": "WezTerm",
       },
-  },
-
-  // MIDDLE
-  "clock": {
-      "interval": 10,
-      "format": "{:%H:%M}",
-      "timezone": "Etc/GMT",
-      "tooltip": true,
-      "tooltip-format": "{:%d-%m-%Y}",
   },
 
   // RIGHT
