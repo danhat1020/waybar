@@ -5,11 +5,11 @@
     "width": 1920,
 
     "modules-left": [
-        "hyprland/workspaces",
+        "hyprland/workspaces"
     ],
     "modules-center": [
         "clock",
-        "hyprland/window",
+        "hyprland/window"
     ],
     "modules-right": [
         "backlight",
@@ -23,8 +23,8 @@
   "hyprland/workspaces": {
       "format": "{name}",
       "persistent-workspaces": {
-          "*": 10,
-      },
+          "*": 10
+      }
   },
 
   // MIDDLE
@@ -33,41 +33,37 @@
       "format": "{:%H:%M}",
       "timezone": "Etc/GMT",
       "tooltip": true,
-      "tooltip-format": "{:%d-%m-%Y}",
+      "tooltip-format": "{:%d-%m-%Y}"
   },
 
   "hyprland/window": {
       "format": "{class}",
-      "icon": true,
-      "icon-size": 12,
-      "tooltip": false,
-      "rewrite": {
-          "org.wezfurlong.wezterm": "WezTerm",
-      },
+      "icon": false,
+      "tooltip": false
   },
 
   // RIGHT
   // backlight, pulseaudio, network, battery
   "backlight": {
-      "interval": 10,
+      "interval": 1,
       "format": "{icon} {percent}%",
       "format-icons": ["󰃞", "󰃞", "󰃞", "󰃟", "󰃟", "󰃟", "󰃟", "󰃠", "󰃠", "󰃠", "󰃠"],
       "tooltip": false,
-      "reverse-scrolling": true,
+      "reverse-scrolling": true
   },
 
   "pulseaudio": {
       "format": "󰕾 {volume}%",
       "format-muted": "󰖁 MUTED",
       "tooltip": false,
-      "reverse-scrolling": true,
+      "reverse-scrolling": true
   },
 
   "network": {
       "format": "󰖩",
       "format-disconnected": "󰖪",
       "tooltip": true,
-      "tooltip-format": "{essid}: {signalStrength}%",
+      "tooltip-format": "{essid}: {signalStrength}%"
   },
 
   "battery": {
@@ -78,7 +74,7 @@
       "tooltip": false,
       "states": {
           "warning": 50,
-          "critical": 25,
-      },
-  },
+          "critical": 25
+      }
+  }
 }
